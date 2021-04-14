@@ -22,7 +22,7 @@ module.exports = {
 ```
 
 ### Create your configuration file
-‍‍‍
+
 ```
 npx tailwindcss init
 ```
