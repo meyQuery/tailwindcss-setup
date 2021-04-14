@@ -5,7 +5,7 @@ Learn how to get Tailwind CSS up and running in your project.
 For most projects (and to take advantage of Tailwind's customization features), you'll want to install Tailwind and its peer-dependencies via npm.
 
 ```
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest
 ```
 
 ### Add Tailwind as a PostCSS plugin
@@ -22,7 +22,8 @@ module.exports = {
 ```
 
 ### Create your configuration file
-‍‍‍```
+‍‍‍
+```
 npx tailwindcss init
 ```
 
