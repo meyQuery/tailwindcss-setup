@@ -1,6 +1,20 @@
 # tailwindcss-setup
 Learn how to get Tailwind CSS up and running in your project.
 
+### First Things First
+```
+npm init
+```
+
+### Initial project directory structure
+project
+- public
+ - css
+ - index.html
+- src
+ - css
+- package.json
+
 ### Install Tailwind via npm
 For most projects (and to take advantage of Tailwind's customization features), you'll want to install Tailwind and its peer-dependencies via npm.
 
@@ -9,7 +23,7 @@ npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest
 ```
 
 ### Add Tailwind as a PostCSS plugin
-Add `tailwindcss` and `autoprefixer` to your PostCSS configuration. Most of the time this is a `postcss.config.js` file at the root of your project, but it could also be a `.postcssrc` file, or `postcss` key in your `package.json` file.
+Add `tailwindcss` and `autoprefixer` to your PostCSS configuration. Most of the time this is a `postcss.config.js` file at the root of your project.
 
 ```
 // postcss.config.js
@@ -22,7 +36,6 @@ module.exports = {
 ```
 
 ### Create your configuration file
-
 ```
 npx tailwindcss init
 ```
@@ -43,7 +56,6 @@ module.exports = {
 ```
 
 ### Include Tailwind in your CSS
-
 ```
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -80,3 +92,5 @@ module.exports = {
 .
 .
 ```
+
+Now you can use the scripts, for example: `npm run build:css`.
