@@ -7,12 +7,12 @@ npm init
 ```
 
 ### Initial project directory structure
-project
-- public
-  - css
+📁 project
+- 📁 public
+  - 📁 css
   - index.html
-- src
-  - css
+- 📁 src
+  - 📁 css
 - package.json
 
 ### Install Tailwind via npm
