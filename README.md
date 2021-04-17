@@ -9,10 +9,10 @@ npm init
 ### Initial project directory structure
 project
 - public
- - css
- - index.html
+  - css
+  - index.html
 - src
- - css
+  - css
 - package.json
 
 ### Install Tailwind via npm
