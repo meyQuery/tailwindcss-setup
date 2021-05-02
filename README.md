@@ -22,8 +22,12 @@ For most projects (and to take advantage of Tailwind's customization features), 
 npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest
 ```
 
-### Add Tailwind as a PostCSS plugin
-Add `tailwindcss` and `autoprefixer` to your PostCSS configuration. Most of the time this is a `postcss.config.js` file at the root of your project.
+### Create your configuration file and add Tailwind as a PostCSS plugin
+```
+npx tailwindcss init -p
+```
+
+This will create a `postcss.config.js` file and a minimal`tailwind.config.js` file at the root of your project:
 
 ```
 // postcss.config.js
@@ -34,13 +38,6 @@ module.exports = {
   }
 }
 ```
-
-### Create your configuration file
-```
-npx tailwindcss init
-```
-
-This will create a minimal `tailwind.config.js` file at the root of your project:
 
 ```
 // tailwind.config.js
@@ -57,9 +54,9 @@ module.exports = {
 
 ### Include Tailwind in your CSS
 ```
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 ### Building your CSS
