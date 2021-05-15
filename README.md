@@ -65,7 +65,9 @@ When building for production, be sure to configure the `purge` option to remove 
 ```
 // tailwind.config.js
 module.exports = {
-  purge: ['public/*.html'],
+  purge: [
+    'public/*.html',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -81,7 +83,7 @@ module.exports = {
 .
 .
 "scripts": {
-  "watch:css": "postcss ./src/css/**/*.css -o ./public/css/style.css --watch",
+  "watch:css": "postcss ./src/css/**/*.css -o ./public/css/style.css -w",
   "build:css": "postcss ./src/css/style.css -o ./public/css/style.css",
   "production:css": "NODE_ENV=production postcss ./src/css/style.css -o ./public/css/style.css"
 },
